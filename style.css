@@ -28,7 +28,7 @@ label {
     margin: 10px 0 5px;
 }
 
-input {
+input, select {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -47,9 +47,9 @@ button {
     cursor: pointer;
 }
 
-    button:hover {
-        background: #4cae4c;
-    }
+button:hover {
+    background: #4cae4c;
+}
 
 #results {
     font-size: 1.2em;
