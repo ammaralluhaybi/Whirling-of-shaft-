@@ -47,9 +47,9 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background: #4cae4c;
-}
+    button:hover {
+        background: #4cae4c;
+    }
 
 #results {
     font-size: 1.2em;
