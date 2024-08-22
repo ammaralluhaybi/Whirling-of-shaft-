@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whirling Shaft Virtual Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Whirling Shaft Virtual Lab</h1>
+
+        <div class="section">
+            <h2>Input Parameters</h2>
+            <form id="shaftForm">
+                <label for="shaftLength">Shaft Length (m):</label>
+                <input type="number" id="shaftLength" step="0.01" required>
+
+                <label for="shaftDiameter">Shaft Diameter (m):</label>
+                <input type="number" id="shaftDiameter" step="0.001" required>
+
+                <label for="shaftMass">Shaft Mass (kg):</label>
+                <input type="number" id="shaftMass" step="0.1" required>
+
+                <label for="material">Material:</label>
+                <select id="material" required>
+                    <option value="210">Steel (210 GPa)</option>
+                    <option value="70">Aluminum (70 GPa)</option>
+                    <option value="100">Titanium (100 GPa)</option>
+                    <option value="380">Diamond (380 GPa)</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" id="externalMass"> Include External Mass (320g)
+                </label>
+
+                <button type="button" id="calculateButton">Calculate Critical Speed</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Results</h2>
+            <p id="results"></p>
+        </div>
+
+        <div class="section">
+            <h2>Graph</h2>
+            <canvas id="graphCanvas" width="400" height="400"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
